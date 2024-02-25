@@ -1,0 +1,198 @@
+
+/* CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mySkills {
+    margin: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexContainer div {
+    width: 33%; /* Set width of each skill box */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flexContainer img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.myWork {
+    margin: 20px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+}
+
+.workGrid div {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.workGrid img {
+    width: 100%;
+    height: auto;
+}
+
+.workGrid button {
+    background-color: #D0A646;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    font-family: "Outfit", sans-serif, arial;
+}
+
+
+h3 {
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif, arial;
+}
+h4 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: "Outfit", sans-serif, arial;
+}
+
+footer {
+    background-color: #437C90;
+    color: #D0A646;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header {
+    background-color: #437C90;
+    color: #D0A646;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h1{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400pt; */
+    font-style: normal;
+  }
+
+  .button {
+    color:#D0A646;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #D0A646;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+ .preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: rgb(238, 233, 233);
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+   .preloader img {
+    animation: spin 3s ease;
+    transition: all;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .workGrid button:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Mobile media query styles */
+    .flexContainer {
+        flex-direction: column; /* Change flex direction to column */
+    }
+
+    .flexContainer div {
+        width: 100%; /* Make flex children take up 100% width */
+    }
+
+    .workGrid {
+        grid-template-areas:
+            "image1"
+            "content1"
+            "image2"
+            "content2";
+        grid-template-columns: 1fr; /* Display only one column */
+        grid-template-rows: auto auto auto auto; /* Set rows for mobile views */
+    }
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
