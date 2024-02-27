@@ -1,5 +1,29 @@
 
 /* CSS styles here */
+.hero-banner {
+    background-image: url('hero-image.jpg'); /* Replace 'hero-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.bio {
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+.bio img {
+    border-radius: 50%; /* Rounded border for the image */
+    width: 150px; /* Adjust image size as needed */
+    height: 150px;
+    margin-bottom: 20px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,8 +51,8 @@ body {
 }
 
 .flexContainer img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
 }
 
@@ -155,7 +179,7 @@ nav ul li a:hover {
     align-items: center;
   }
    .preloader img {
-    animation: spin 3s ease;
+    animation: spin 2s ease;
     transition: all;
     width: 280px;
     margin: 0 auto;
@@ -164,6 +188,8 @@ nav ul li a:hover {
   .workGrid button:hover {
     background-color: #0056b3; /* Change button color on hover */
 }
+
+
 
 @media only screen and (max-width: 600px) {
     /* Mobile media query styles */
